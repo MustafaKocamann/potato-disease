@@ -1,0 +1,127 @@
+/**
+ * ============================================================================
+ * POTATO GUARD - Global CSS Stilleri
+ * ============================================================================
+ * Bu dosya tüm uygulama genelinde geçerli olan temel stilleri içerir.
+ * ============================================================================
+ */
+
+/* ===== TEMEL STİLLER ===== */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-family: 'Inter', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 
+		'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+	min-height: 100vh;
+}
+
+/* ===== KOD BLOKLARI ===== */
+code {
+	font-family: 'Fira Code', source-code-pro, Menlo, Monaco, Consolas, 
+		'Courier New', monospace;
+}
+
+/* ===== DROPZONE ÖZELLEŞTİRMELERİ ===== */
+/* Dropzone arka planı */
+.MuiDropzoneArea-root {
+	background: rgba(255, 255, 255, 0.03) !important;
+	border: 2px dashed rgba(102, 126, 234, 0.5) !important;
+	border-radius: 16px !important;
+	min-height: 250px !important;
+	transition: all 0.3s ease !important;
+}
+
+/* Dropzone hover efekti */
+.MuiDropzoneArea-root:hover {
+	border-color: rgba(102, 126, 234, 0.8) !important;
+	background: rgba(102, 126, 234, 0.05) !important;
+}
+
+/* Dropzone metin rengi */
+.MuiDropzoneArea-text {
+	color: rgba(255, 255, 255, 0.8) !important;
+	font-size: 1rem !important;
+	margin-top: 20px !important;
+}
+
+/* Dropzone ikon rengi */
+.MuiDropzoneArea-icon {
+	color: #667eea !important;
+	width: 60px !important;
+	height: 60px !important;
+}
+
+/* ===== LINEAR PROGRESS BAR ===== */
+.MuiLinearProgress-barColorPrimary {
+	background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+}
+
+/* ===== CHIP ÖZELLEŞTİRMELERİ ===== */
+.MuiChip-label {
+	padding: 8px 16px !important;
+}
+
+/* ===== KAYDIRMA ÇUBUĞU ===== */
+::-webkit-scrollbar {
+	width: 8px;
+}
+
+::-webkit-scrollbar-track {
+	background: rgba(255, 255, 255, 0.05);
+}
+
+::-webkit-scrollbar-thumb {
+	background: rgba(102, 126, 234, 0.5);
+	border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: rgba(102, 126, 234, 0.8);
+}
+
+/* ===== SEÇİM RENGİ ===== */
+::selection {
+	background: rgba(102, 126, 234, 0.3);
+	color: white;
+}
+
+/* ===== ANİMASYONLAR ===== */
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes pulse {
+	0%, 100% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0.5;
+	}
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
